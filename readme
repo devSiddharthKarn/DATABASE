@@ -1,14 +1,20 @@
-Keep this folder as D:/Database in C on your device.
+Keep this folder as D:/Database in C with API on your device.
 Then simply run main.exe application on your system.
 
+you can change the path according to  your need. VISIT  functions.h for changing the path
 
 
-_________written by Siddharth Karn as a  C project __________
+
+
+_________written by Siddharth Karn and TEAM BOLTS as a  C project __________
 
 
 
 //function examples
+
+//dev-kits
 import file myFile 124;
+inject into _name_ _id_;
 create file myfile 124;
 delete file myfile 124;
 use file myFile 124;
@@ -24,10 +30,20 @@ feed object myFile 124;
 replicate file myFile 124;
 
 
+//front-kits
 CLR
 EXIT 
 USE
 DATA
+
+
+
+There might be errors.
+
+....
+
+
+FIX functions.h or main.C if error
 
 
 
