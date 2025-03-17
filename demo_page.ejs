@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo_Page</title>
+    <script>
+        async function submit(){
+            const filename= document.getElementById("filename").value;
+
+            const file_id= document.getElementById("file_id").value;
+
+            const content = document.getElementById("content").value;
+
+            //URL
+            const URL = "http://localhost:3000/submit";
+
+            const response = await fetch(URL,{
+                method:"POST",
+                headers:{
+                    "Content-Type":"application/json"
+                },
+                body:JSON.stringify({filename,file_id,content})
+            });
+
+            console.log(response);
+        }
+    </script>
+</head>
+<body>
+
+    <h1>
+        <%=message %>
+    </h1>
+
+    <label for="filename">
+        Enter filename:
+        <input type="text" required id="filename">
+    </label><br>
+
+    <label for="file_id">
+        Enter id:
+        <input type="number" required id="file_id">
+    </label><br>
+
+    <label for="content">
+        <textarea id="content" placeholder="Your content here"></textarea>
+    </label><br>
+
+    <button type="button" onclick="submit()">STORE</button>
+</body>
+</html>

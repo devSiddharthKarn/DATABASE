@@ -1,0 +1,36 @@
+Project folder must exist in D drive as D:/Database in C with API
+(modify functions.h to change it's value)
+
+
+Minor issues may occur. Use at your own risk.Or you can modify the definition file FUNCTION_H
+
+this project should be in D drive of computer . otherwise change the definition file FUNCTIONS_H for your location. Better to use D drive and keep this folder as it is.
+
+Do not use or do anything to file under internals. They are used for easy functioning, tracking and for run time variables.
+
+
+
+TYPE LOG to see the commands
+
+
+contentVar defines the copy and paste content from the file.
+
+files keep track of the created files in the form of name and id.
+
+pointer was created to inject into run time variables and modify them but was not used in the project. How ever better to keep it in case needed.
+
+main.C contains the main program where command is input and then passed to the main definition file FUNCTION_H for further execution after some front kits check
+
+functions.h contains all the definition of executable functions and how commands are working. It is the main logic of the whole system. Can be modified according to the need.
+
+main.exe is the binary executable for the system
+
+
+-------working-------
+all files are create in data folder . No nested folders can exist. can cause errors.
+
+create file creates a file as a child of data folder and stores the metadata into internals/files
+everything is then accessed accordingly....
+
+you can import file using the import command which takes your new filename and id as parameter
+

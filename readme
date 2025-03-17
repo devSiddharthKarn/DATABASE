@@ -1,0 +1,33 @@
+Keep this folder as D:/Database in C on your device.
+Then simply run main.exe application on your system.
+
+
+
+_________written by Siddharth Karn as a  C project __________
+
+
+
+//function examples
+import file myFile 124;
+create file myfile 124;
+delete file myfile 124;
+use file myFile 124;
+feed file myFile 124;
+flush file myFile 124;
+is exist myFile 124;
+render file myFile 124;
+render size myFile 124;
+copy content myFile 124
+paste content myFile 123;
+feed object myFile 124;
+..exitFeed;
+replicate file myFile 124;
+
+
+CLR
+EXIT 
+USE
+DATA
+
+
+

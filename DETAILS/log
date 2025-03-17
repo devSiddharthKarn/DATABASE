@@ -1,0 +1,50 @@
+------------front-kits---------------
+CLR : used to clear the screen 
+(uses system("clear") from "stdlib.h" in C on mac/LinuxOS and system("cls") on windows)
+(needs gcc compiler like modern compilers)
+
+EXIT: used to exit the FileBase
+
+USE: used to log the use values to the terminal
+
+DATA : used to log the available files in the screen along with total number of files present
+
+LOG: used to log all the front kits  and dev kits functions to the system
+
+HELP : used to log the help center from the help file in DETAILS
+
+
+----------------dev kits----------------
+
+import as _name_  _id_: ask for importing new file . (system will ask the path of new file);
+
+inject into _name_ _id_:injects data from other file (system will ask for the path of the file);
+
+create file _name_  _id_ : create a new file
+
+delete file _name_  _id_ : delete a file only from data folder
+
+use file _name_  _id_ : set the use variable to use the id and path for passed file
+(will have to change manually everytime)
+
+feed file _name_  _id_: allows for feeding data into the passed file (without the form of object)
+
+..exitFeed : keyword used to exit feed process(only when written in a new line , only for feed file )
+
+is exist _name_  _id_: checks if the file exists (according to internals/files)
+
+render file _name_  _id_: prints the data from the file to the console
+
+render size _name_  _id_: prints the size of passed file to the console in the form of bytes
+
+copy content _name_  _id_: copy content from the passed filed into the internals/contentVar
+
+paste content _name_  _id_: paste the copied content from internals/contentVar into the newly passed file if exist otherwise return not exist
+
+feed object _name_  _id_: used to feed the data to the passed file, first asks the user to create number of heads, pass the titles and then the number of objects and their values respect to the title.All the content is then written to the passed file.
+(won't perform check if relevant data is being passed)
+(need to redefine heads for multiple feeding periods)
+(automatically exits if feeding completes, ..exitFeed does not apply)
+
+replicate file _name_  _id_ : used to replicate a file into a new file
+(arguement passed is source file, will ask to pass the id and name for target file and replicate it there)
